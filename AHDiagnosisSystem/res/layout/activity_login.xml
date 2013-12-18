@@ -4,6 +4,18 @@
 
     <!-- Login progress -->
 
+	<TextView 
+	    android:id="@+id/title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="left|top"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginTop="20dp"
+	    android:text="@string/main_title"
+	    android:textColor="#33b5e5"
+	    android:textSize="30sp"
+	    android:textStyle="bold"
+	    />
     <LinearLayout
         android:id="@+id/login_status"
         android:layout_width="wrap_content"
@@ -14,7 +26,7 @@
         android:visibility="gone" >
 
         <ProgressBar
-            style="?android:attr/progressBarStyleLarge"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Large"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp" />

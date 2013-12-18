@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">AHDiagnosisSystem</string>
-    <string name="dummy_button">Dummy Button</string>
+    <string name="Home_Title">Integration Diagnosis System</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
 </resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- the first level of home navigation -->
+    <string-array name="home_menu">
+        <item >Info Manager</item>
+        <item >Diagnose</item>
+        <item >Settings</item>
+    </string-array>
+    
+     <!-- the second level of home navigation -->
+    <string-array name="info_manager">
+        <item >Insert</item>
+        <item >Query</item>
+    </string-array>
+    
+    <string-array name="diagnose">
+        <item >Base Diagnose</item>
+        <item >ECG</item>
+        <item >Biochemistry</item>
+        <item >Summary</item>
+    </string-array>
+    
+    <string-array name="settings">
+        <item >WIFI</item>
+        <item >BlueTooth</item>
+        <item >Date Time</item>
+        <item >Exit</item>
+    </string-array>
+    
+</resources>

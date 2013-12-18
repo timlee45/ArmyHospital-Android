@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -58,8 +59,12 @@ public class LoginActivity extends Activity {
 		mEmail = getIntent().getStringExtra(EXTRA_EMAIL);
 		mEmailView = (EditText) findViewById(R.id.email);
 		mEmailView.setText(mEmail);
+		//TODO for test
+		mEmailView.setText("yeding@boss.com");
 
 		mPasswordView = (EditText) findViewById(R.id.password);
+		//TODO for test
+		mPasswordView.setText("1212212");
 		mPasswordView
 				.setOnEditorActionListener(new TextView.OnEditorActionListener() {
 					@Override
@@ -225,7 +230,10 @@ public class LoginActivity extends Activity {
 			showProgress(false);
 
 			if (success) {
-				finish();
+//				finish();
+				Intent it = new Intent(LoginActivity.this, HomeActivity.class);
+				LoginActivity.this.startActivity(it);
+				
 			} else {
 				mPasswordView
 						.setError(getString(R.string.error_incorrect_password));
