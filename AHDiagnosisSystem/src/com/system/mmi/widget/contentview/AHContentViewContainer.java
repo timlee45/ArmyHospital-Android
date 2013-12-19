@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.HashMap;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -12,11 +13,13 @@ import org.json.JSONObject;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.view.View;
 import android.widget.RelativeLayout;
 
 public class AHContentViewContainer extends RelativeLayout{
 
 	private Context mContext;
+	private HashMap<String, View> viewMap = new HashMap<String, View>();
 	
 	public AHContentViewContainer(Context context, AttributeSet attrs,
 			int defStyle) {
@@ -35,11 +38,44 @@ public class AHContentViewContainer extends RelativeLayout{
 	}
 
 	private void init(Context context){
-		
+		this.mContext = context;
 	}
 	
-	public void setViewById(int group, int child){
-		
+	public void setViewById(int groupId, int childId){
+		String key = getViewMapKey(groupId, childId);
+		View view = viewMap.get(key);
+		this.removeAllViews();
+		if(view != null){
+			this.addView(view);
+			return;
+		}
+		if(key.equals(getViewMapKey(0, 0))){
+			view = new AHInputInfoView(mContext);
+		}else if(key.equals(getViewMapKey(0, 1))){
+			
+		}else if(key.equals(getViewMapKey(1, 0))){
+			
+		}else if(key.equals(getViewMapKey(1, 1))){
+			
+		}else if(key.equals(getViewMapKey(1, 2))){
+			
+		}else if(key.equals(getViewMapKey(1, 3))){
+			
+		}else if(key.equals(getViewMapKey(2, 0))){
+			
+		}else if(key.equals(getViewMapKey(2, 1))){
+			
+		}else if(key.equals(getViewMapKey(2, 2))){
+			
+		}else {
+			
+		}
+		viewMap.put(key, view);
+		this.addView(view);
+	}
+	
+	private String getViewMapKey(int groupId, int childId){
+		return ""+groupId+":"+childId;
 	}
 	
 	private void readContentFromAsset() throws IOException{

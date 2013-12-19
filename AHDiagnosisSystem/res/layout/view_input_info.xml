@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<LinearLayout
+	    android:id="@+id/row1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    
+	    <com.system.mmi.widget.base.BaseTextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingRight="20dp"
+	        android:text="@string/info_name"/>
+	    <com.system.mmi.widget.base.BaseEditText
+	        android:id="@+id/edit_name"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        />
+	    <com.system.mmi.widget.base.BaseTextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingRight="20dp"
+	        android:paddingLeft="20dp"
+	        android:text="@string/info_id"/>
+	    <com.system.mmi.widget.base.BaseEditText
+	        android:id="@+id/edit_id"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        />
+	 </LinearLayout>
+	 
+	<LinearLayout
+	    android:id="@+id/row2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_below="@id/row1"
+	    android:layout_alignLeft="@id/row1">
+	    
+	    <com.system.mmi.widget.base.BaseTextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingRight="20dp"
+	        android:text="@string/info_sex"/>
+	    <com.system.mmi.widget.base.BaseEditText 
+	        android:id="@+id/edit_sex"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        />
+	    <com.system.mmi.widget.base.BaseTextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingRight="20dp"
+	        android:paddingLeft="20dp"
+	        android:text="@string/info_birthday"/>
+	    <com.system.mmi.widget.base.BaseEditText
+	        android:id="@+id/edit_birthdy"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        />
+	 </LinearLayout>
+	 
+     <LinearLayout
+	    android:id="@+id/row3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_below="@id/row2"
+	    android:layout_alignLeft="@id/row2">
+	    
+	    <com.system.mmi.widget.base.BaseTextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingRight="20dp"
+	        android:text="@string/info_mobile"/>
+	    <com.system.mmi.widget.base.BaseEditText 
+	        android:id="@+id/edit_mobile"
+	        android:layout_width="480dp"
+	        android:layout_height="wrap_content"
+	        />
+	 </LinearLayout>
+	 
+     <LinearLayout
+	    android:id="@+id/row4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_below="@id/row3"
+	    android:layout_alignLeft="@id/row3">
+	    
+	    <com.system.mmi.widget.base.BaseTextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingRight="20dp"
+	        android:text="@string/info_address"/>
+	    <com.system.mmi.widget.base.BaseEditText 
+	        android:id="@+id/edit_address"
+	        android:layout_width="480dp"
+	        android:layout_height="wrap_content"
+	        />
+	 </LinearLayout>
+	 
+     <LinearLayout
+	    android:id="@+id/row5"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_below="@id/row4"
+	    android:layout_alignLeft="@id/row4">
+	    
+	    <com.system.mmi.widget.base.BaseTextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingRight="20dp"
+	        android:text="@string/info_army_time"/>
+	    <com.system.mmi.widget.base.BaseEditText 
+	        android:id="@+id/edit_army_time"
+	        android:layout_width="480dp"
+	        android:layout_height="wrap_content"
+	        />
+	 </LinearLayout>
+	 
+     <LinearLayout
+	    android:id="@+id/row6"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_below="@id/row5"
+	    android:layout_alignLeft="@id/row5">
+	    
+	    <com.system.mmi.widget.base.BaseTextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingRight="20dp"
+	        android:text="@string/info_army_num"/>
+	    <com.system.mmi.widget.base.BaseEditText 
+	        android:id="@+id/edit_army_num"
+	        android:layout_width="480dp"
+	        android:layout_height="wrap_content"
+	        />
+	 </LinearLayout>
+	 
+     <ImageView 
+         android:id="@+id/image_head"
+         android:layout_width="100dp"
+	     android:layout_height="150dp"
+	     android:layout_toRightOf="@id/row1"
+	     android:layout_alignTop="@id/row1"
+	     android:src="@color/black_overlay"
+         />
+     <com.system.mmi.widget.base.BaseButton
+         android:id="@+id/button_read_info"
+         android:layout_width="300dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/row6"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="30dp"
+         android:text="@string/read_info"
+     />
+         
+     <LinearLayout
+	    android:id="@+id/row_button"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_below="@id/button_read_info"
+	    android:layout_alignLeft="@id/button_read_info">
+	    
+         <com.system.mmi.widget.base.BaseButton
+         android:id="@+id/button_save"
+         android:layout_width="100dp"
+         android:layout_height="wrap_content"
+         android:text="@string/save"
+     	/>
+     	<com.system.mmi.widget.base.BaseButton
+         android:id="@+id/button_clear"
+         android:layout_width="100dp"
+         android:layout_height="wrap_content"
+         android:text="@string/clear"
+    	/>
+    	<com.system.mmi.widget.base.BaseButton
+         android:id="@+id/button_diagnosis"
+         android:layout_width="100dp"
+         android:layout_height="wrap_content"
+         android:text="@string/diagnosis"
+     	/>
+     </LinearLayout>
+</RelativeLayout>

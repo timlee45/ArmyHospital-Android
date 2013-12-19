@@ -63,7 +63,6 @@ public class SQLiteProvider extends ContentProvider{
 					if(selectionArgs[0] != null){
 						where.append("id = '" + selectionArgs[0] + "'");
 						where.append(" AND " + "name = '" + selectionArgs[1] + "'");
-						where.append(" OR " + "age = '" + selectionArgs[2] + "'");
 					}
 					logCat("query chat_record: " + where.toString());
 				}
@@ -94,8 +93,12 @@ public class SQLiteProvider extends ContentProvider{
 			public void onCreate(SQLiteDatabase db) {
 				db.execSQL("CREATE TABLE " + SQLITE_NAME + " ("
 		                   + "name" + " TEXT,"
-		                   + "age" + " TEXT,"
+		                   + "birthday" + " TEXT,"
 		                   + "id" + " TEXT,"
+		                   + "mobile" + " TEXT,"
+		                   + "address" + " TEXT,"
+		                   + "armyTime" + " TEXT,"
+		                   + "armyNum" + " TEXT,"
 		                   + "sex" + " TEXT"
 		                   + ");");
 				db.setVersion(SQLITE_VERSION);

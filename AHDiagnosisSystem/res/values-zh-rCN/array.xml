@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- the first level of home navigation -->
+    <string-array name="home_menu">
+        <item >信息管理</item>
+        <item >生命体征</item>
+        <item >系统设置</item>
+    </string-array>
+    
+     <!-- the second level of home navigation -->
+    <string-array name="info_manager">
+        <item >信息录入</item>
+        <item >信息查询</item>
+    </string-array>
+    
+    <string-array name="diagnose">
+        <item >基础诊断</item>
+        <item >心电诊断</item>
+        <item >生化诊断</item>
+        <item >诊断结果</item>
+    </string-array>
+    
+    <string-array name="settings">
+        <item >WIFI</item>
+        <item >蓝牙</item>
+        <item >日期时间</item>
+        <item >退出</item>
+    </string-array>
+    
+</resources>

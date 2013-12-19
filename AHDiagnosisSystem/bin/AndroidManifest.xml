@@ -18,14 +18,14 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
-
+            
         </activity>
         <activity
             android:name="com.system.mmi.home.LoginActivity"
             android:label="@string/title_activity_login"
             android:windowSoftInputMode="adjustResize|stateVisible" 
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
-                        <intent-filter>
+			<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
